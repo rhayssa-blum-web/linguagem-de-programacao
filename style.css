@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: font2;
+    src: url(fontes/monospace_typewrite/MonospaceTypewriter.ttf)
+}
+
+@font-face {
+    font-family: font1; 
+    src: url(fontes/cursive_sans/CursiveSans-Book.ttf);
+
+
+}
+
+body{
+
+    background-color: rgb(172, 172, 172);
+    overflow-x: hidden;
+  
+}
+
+.script{
+position: absolute;
+top: 840px;
+left: 42%;
+
+}
+
+h1{
+   
+   text-align: center;
+   font-family: font1;
+   background-color: aliceblue;
+   
+   
+}
+
+p{
+   text-align: center;
+   font-size: 18px;
+   font-family: font2;
+   
+}
+
+img{
+    position: relative;
+ left: 300px;
+ top: 5px;
+}
+
+
+footer{
+
+    position: relative;
+    top: 500px;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 15px;
+    font-size: 20px;
+  
+}
+
+iframe{
+    position: relative;
+   
+    top: 150px;
+    left: 459px ;
+    }
+
+    input{
+        font-size: 17px;
+        font-family: font2;
+    }
+
+
+  .animacao{
+    width: 170px;
+    position: absolute;
+    top: 160%;
+    left: 12%;
+   animation-name: move;
+   animation-duration: 25s;
+   animation-timing-function:linear;
+   animation-delay: 1s;
+   animation-fill-mode:forwards;
+   animation-play-state:running;
+
+
+  }
+
+  @keyframes move {
+    from{
+        
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(calc(100vw - 200px));
+    }
+    
+  }
+
+  @media  (max-width: 760px) {
+  
+   iframe{
+    left: 12%;
+    width:75%;
+    height: 60%;
+   }
+
+   .animacao{
+    top: 254%;
+   }
+
+   .script{
+    top: 225% ;
+    width: 15%;
+    left: 15%;
+   }
+
+   img{
+    width: 80%;
+    left: 9%;
+   }
+   }
+
+   
+
+
+
+
+   
